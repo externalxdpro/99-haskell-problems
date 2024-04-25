@@ -13,20 +13,4 @@ encode = map (\xs -> (length xs, head xs)) . pack
 
 main :: IO ()
 main = do
-  print $
-    encode
-      [ 'a',
-        'a',
-        'a',
-        'a',
-        'b',
-        'c',
-        'c',
-        'a',
-        'a',
-        'd',
-        'e',
-        'e',
-        'e',
-        'e'
-      ]
+  print $ encode "aaaabccaadeeee"
